@@ -31,17 +31,4 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    function updateThemeText() {
-        const themeText = document.body.classList.contains('dark-mode') ? 'Dark' : 'Light';
-        document.getElementById('currentTheme').textContent = `Current Theme: ${themeText}`;
-    }
-
-    document.getElementById('themeSwitch').addEventListener('change', function() {
-        document.body.classList.toggle('dark-mode');
-        updateThemeText();
-    });
-
-    // Set initial theme text on page load
-    updateThemeText();
-
 });

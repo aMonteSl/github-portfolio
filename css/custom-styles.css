@@ -1,0 +1,10 @@
+.first_color {
+    background-color: #1c0af8;
+}
+
+.img-profile-square {
+    border-radius: 0; /* Elimina el borde redondeado */
+    box-shadow: 0 0 100px rgba(244, 0, 0, 100); /* Ajusta la sombra para que sea más visible */
+    width: 200px; /* Ajusta el ancho de la imagen */
+    height: 200px; /* Ajusta la altura de la imagen */
+}
