@@ -10,6 +10,133 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ /* filepath: /home/adrian/Escritorio/github-portfolio/css/styles.css */
+.img-square {
+  border-radius: 0; /* Remove rounded corners */
+}
+
+/* filepath: /home/adrian/Escritorio/github-portfolio/css/styles.css */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* filepath: /home/adrian/Escritorio/github-portfolio/css/styles.css */
+/* Estilos por defecto (modo claro) */
+body {
+  background-color: #F8F9FA; /* Body */
+  color: #6C757D; /* Contenido */
+}
+
+.navbar {
+  background-color: #FFFFFF; /* Contenedor */
+  border-color: #DEE2E6; /* Border */
+}
+
+.navbar-brand,
+.nav-link {
+  color: #343A40; /* Título */
+}
+
+.resume-section {
+  background-color: #FFFFFF; /* Contenedor */
+  border-color: #DEE2E6; /* Border */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #343A40; /* Título */
+}
+
+.container-fluid {
+  background-color: #FFFFFF; /* Contenedor */
+}
+
+/* Modo oscuro */
+.dark-mode {
+  background-color: #192229; /* Body */
+  color: #A0A7AC; /* Contenido */
+}
+
+.dark-mode .navbar {
+  background-color: #212E36; /* Contenedor */
+  border-color: #2A3B47; /* Border */
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+  color: #EFF3F5; /* Título */
+}
+
+.dark-mode .resume-section {
+  background-color: #212E36; /* Contenedor */
+  border-color: #2A3B47; /* Border */
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+  color: #EFF3F5; /* Título */
+}
+
+.dark-mode .container-fluid {
+  background-color: #212E36; /* Contenedor */
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
